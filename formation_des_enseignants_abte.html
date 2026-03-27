@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Formation des Enseignants | ABTE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#00174b",
+              "surface-container-low": "#f2f3ff",
+              "on-primary-fixed-variant": "#1c4197",
+              "on-primary-fixed": "#00174b",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#005321",
+              "on-tertiary-container": "#37b75d",
+              "on-secondary-container": "#00516e",
+              "secondary-fixed-dim": "#78d1ff",
+              "surface-variant": "#dbe1ff",
+              "on-tertiary-fixed": "#002109",
+              "tertiary-container": "#004118",
+              "secondary-fixed": "#c3e8ff",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#63df7f",
+              "surface-dim": "#cfd9ff",
+              "outline-variant": "#c4c6d4",
+              "inverse-primary": "#b4c5ff",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#80fc98",
+              "surface-tint": "#3959b0",
+              "primary-fixed-dim": "#b4c5ff",
+              "inverse-on-surface": "#eef0ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#faf8ff",
+              "on-secondary-fixed-variant": "#004c68",
+              "on-secondary-fixed": "#001e2c",
+              "error": "#ba1a1a",
+              "secondary": "#006689",
+              "on-primary-container": "#7f9df8",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "on-surface": "#00174b",
+              "primary-container": "#003087",
+              "background": "#faf8ff",
+              "secondary-container": "#4ec7ff",
+              "surface-container-high": "#e3e7ff",
+              "surface": "#faf8ff",
+              "primary": "#001d59",
+              "inverse-surface": "#002a78",
+              "surface-container": "#ebedff",
+              "on-surface-variant": "#444652",
+              "primary-fixed": "#dbe1ff",
+              "outline": "#747683"
+            },
+            fontFamily: {
+              "headline": ["Montserrat", "Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(24px);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #001d59 0%, #003087 100%);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-xl shadow-blue-900/5">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-black text-blue-900 dark:text-blue-50 tracking-tighter">ABTE</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors text-sm font-semibold tracking-wide" href="actualit_s_abte.html">Actualités</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors text-sm font-semibold tracking-wide" href="biblioth_que_num_rique_abte.html">Bibliothèque</a>
+<a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-700 dark:border-blue-300 pb-1 text-sm font-semibold tracking-wide" href="#">Formations</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors text-sm font-semibold tracking-wide" href="faq_support_abte.html">Support</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-4 text-blue-900">
+<span class="material-symbols-outlined cursor-pointer hover:bg-slate-50/50 p-2 rounded-lg transition-all" data-icon="search">search</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-slate-50/50 p-2 rounded-lg transition-all" data-icon="notifications">notifications</span>
+</div>
+<button class="bg-primary-container text-white px-6 py-2.5 rounded-xl font-bold text-sm hover:scale-95 duration-200 ease-in-out">
+                    Mon Espace
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden py-24">
+<div class="absolute inset-0 z-0">
+<img alt="Education Professionnelle" class="w-full h-full object-cover opacity-10" data-alt="modern university lecture hall with rows of tablets and clean minimalist architecture reflecting high-end educational technology focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJiQK6qxlh80cz1-2a3621-OyZtTW5LDN6vecFR4Wxg46vAk6ic1kmYf4TJ-Ufw0aqZPxsgC8ot00SwFwVd97IuiUeBC9YHMne-8y20AyOP4BqW3kCK0b_4gL-VONVBPpHfOeTjw2Aig73YNVFRQBOOcrNYBMq-W6G5PXJIMGeGZkeFkgXf5PepaO2aYzR-cFWCyAYtgst0MhKAOK0oOuFW2ySl0iAFCG-TX4Hn-s93mQ1LAirPRS_aNV8gUEmjugut6v2A2SPxiU-"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container/20 rounded-full border border-secondary/10">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="school">school</span>
+<span class="text-secondary font-bold text-xs uppercase tracking-widest">Renforcement des capacités</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-black text-primary leading-[1.1] tracking-tight">
+                        Façonner l'Éducation de <span class="text-secondary">Demain</span>.
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                        Maîtrisez les outils numériques et les nouvelles méthodologies pédagogiques pour transformer l'expérience d'apprentissage de vos élèves au Bénin.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="hero-gradient text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 shadow-xl shadow-primary/20 hover:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="login">login</span>
+                            Accéder au LMS
+                        </button>
+<button class="px-8 py-4 rounded-xl font-bold border border-outline-variant/30 text-primary hover:bg-surface-container-low transition-colors">
+                            Voir le programme
+                        </button>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="aspect-square bg-surface-container-high rounded-full absolute -top-12 -right-12 w-96 h-96 blur-3xl opacity-50"></div>
+<div class="relative z-10 p-4 bg-surface-container-lowest rounded-[2rem] shadow-2xl shadow-primary/5 border border-outline-variant/10">
+<img alt="Enseignant formé" class="rounded-[1.5rem] w-full object-cover" data-alt="beninese teacher smiling confidently while using a sleek modern laptop in a sunlit classroom filled with wooden furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOyb53a3aZ1tq_o7B_xc_j70nkokzNegfptJMoFgjLVIQYm8xJ1TVl6T9Xju97V3vcJt-_iPKaQ-sgO3RWa5s9tHxWGe6BHPsreJuzXzmxgDRpk7fgv-Z5GHal8vzAoPYTSwIJmpPYuwTR364GtIbnTCL12kzenlUQrgOC4kM_C2q7BYMPDB5N2fzFafHQLDblvRjxzZfG8y3Mtuy7rk98b414ap-sYPUQj2lOClwt2cUAACwzadQPXydf-ogmc37c3moYPsTdBxf3"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Parcours Section (Asymmetric Bento Grid) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20 space-y-4">
+<h2 class="font-headline text-4xl font-extrabold text-primary">Trois Parcours d'Excellence</h2>
+<p class="text-on-surface-variant max-w-xl">Des formations structurées pour chaque étape de votre transformation numérique.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Parcours 1 -->
+<div class="group bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant/5 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
+<div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="devices">devices</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">Initiation au Numérique</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Acquérez les bases fondamentales de l'informatique et découvrez les outils essentiels pour la classe moderne.</p>
+<div class="flex items-center gap-2 text-sm font-bold text-secondary">
+<span>40 Heures de formation</span>
+<span class="material-symbols-outlined text-sm" data-icon="trending_flat">trending_flat</span>
+</div>
+</div>
+<!-- Parcours 2 -->
+<div class="group bg-primary p-10 rounded-[2rem] text-white shadow-2xl shadow-primary/20 transform md:-translate-y-8">
+<div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-secondary-fixed-dim" data-icon="auto_stories">auto_stories</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Scénarisation Pédagogique</h3>
+<p class="text-blue-100/80 mb-8 leading-relaxed">Apprenez à concevoir des séquences d'apprentissage interactives et engageantes adaptées au télé-enseignement.</p>
+<div class="flex items-center gap-2 text-sm font-bold text-secondary-fixed-dim">
+<span>60 Heures de formation</span>
+<span class="material-symbols-outlined text-sm" data-icon="trending_flat">trending_flat</span>
+</div>
+</div>
+<!-- Parcours 3 -->
+<div class="group bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant/5 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
+<div class="w-16 h-16 bg-tertiary-fixed/20 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-on-tertiary-fixed-variant" data-icon="forum">forum</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">Tutorat en ligne</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Maîtrisez l'art d'accompagner vos élèves à distance et d'animer des communautés virtuelles d'apprentissage.</p>
+<div class="flex items-center gap-2 text-sm font-bold text-secondary">
+<span>30 Heures de formation</span>
+<span class="material-symbols-outlined text-sm" data-icon="trending_flat">trending_flat</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Calendar Section -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-16 items-start">
+<div class="md:w-1/3 sticky top-32">
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-6">Calendrier des Sessions</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">Ne manquez pas les prochaines dates d'inscription. Les places sont limitées pour garantir un encadrement de qualité.</p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-high/40">
+<span class="material-symbols-outlined text-secondary" data-icon="event_available">event_available</span>
+<span class="text-sm font-medium">Inscriptions ouvertes pour Octobre</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-high/40">
+<span class="material-symbols-outlined text-tertiary-container" data-icon="check_circle">check_circle</span>
+<span class="text-sm font-medium">Sessions hybrides disponibles</span>
+</div>
+</div>
+</div>
+<div class="md:w-2/3 w-full grid gap-4">
+<!-- Session Row 1 -->
+<div class="bg-surface-container-low p-6 rounded-2xl flex items-center justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-8">
+<div class="text-center min-w-[60px]">
+<span class="block text-2xl font-black text-primary">12</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Octobre</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Initiation au Numérique - Cohorte A</h4>
+<p class="text-sm text-on-surface-variant">En ligne &amp; Présentiel (Cotonou)</p>
+</div>
+</div>
+<button class="bg-white text-primary text-xs font-bold px-4 py-2 rounded-lg border border-outline-variant/20 group-hover:bg-primary group-hover:text-white transition-all">
+                                Réserver ma place
+                            </button>
+</div>
+<!-- Session Row 2 -->
+<div class="bg-surface-container-low p-6 rounded-2xl flex items-center justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-8">
+<div class="text-center min-w-[60px]">
+<span class="block text-2xl font-black text-primary">24</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Octobre</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Tutorat en ligne - Module Avancé</h4>
+<p class="text-sm text-on-surface-variant">100% Distanciel</p>
+</div>
+</div>
+<button class="bg-white text-primary text-xs font-bold px-4 py-2 rounded-lg border border-outline-variant/20 group-hover:bg-primary group-hover:text-white transition-all">
+                                Réserver ma place
+                            </button>
+</div>
+<!-- Session Row 3 -->
+<div class="bg-surface-container-low p-6 rounded-2xl flex items-center justify-between group hover:bg-surface-container-high transition-colors opacity-60">
+<div class="flex items-center gap-8">
+<div class="text-center min-w-[60px]">
+<span class="block text-2xl font-black text-primary">05</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Novembre</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Scénarisation Pédagogique - Session 1</h4>
+<p class="text-sm text-on-surface-variant">Salles ABTE Régionales</p>
+</div>
+</div>
+<button class="bg-surface-container-high text-on-surface-variant text-xs font-bold px-4 py-2 rounded-lg cursor-not-allowed">
+                                Bientôt disponible
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-32 bg-primary overflow-hidden relative">
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-secondary opacity-10 rounded-full blur-[120px]"></div>
+<div class="max-w-5xl mx-auto px-8 relative z-10 text-center">
+<span class="material-symbols-outlined text-6xl text-secondary-fixed-dim/40 mb-8" data-icon="format_quote">format_quote</span>
+<p class="text-2xl md:text-3xl font-headline font-bold text-white leading-relaxed mb-12">
+                    "La formation en scénarisation pédagogique a radicalement changé ma façon d'interagir avec mes élèves. Le numérique n'est plus un obstacle, mais un levier puissant pour la réussite de nos apprenants."
+                </p>
+<div class="flex flex-col items-center gap-4">
+<img alt="Portrait Enseignant" class="w-20 h-20 rounded-full border-4 border-secondary-fixed-dim/20 object-cover" data-alt="portrait of a focused female educator in her 40s with a warm professional smile wearing traditional african business attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQTUkvcYbKfsKQhhqys-zgJO1_yOrgxQh5dM0azkpane6WV6LZ_tYv8KXg64qRrMGi4wFoF5_9lJZBJeUHGMNwYfEcjVf--_YtSqcqMzf94NRALPB_AHik5Ccggrvtiz-EiWTgOl_7VXQHH0vJoO_MtG1lHlzLAgDfO6EMkHOM-jUVbrW1cPKWnvUEszidmDWRXVwXME89pPYF58csDr_C_hhhIXpCoyXxuw_6HzNs9U5bIijzzL4KXUx1cwv3RiD2gn51BNeSj2H-"/>
+<div>
+<h5 class="text-white font-bold text-lg">Mme. Akandé S.</h5>
+<p class="text-blue-300 text-sm font-medium">Professeur de Mathématiques - Porto-Novo</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-surface-container-high rounded-[3rem] p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 border border-outline-variant/10">
+<div class="max-w-xl text-center md:text-left">
+<h2 class="font-headline text-3xl md:text-5xl font-black text-primary mb-6">Prêt à transformer votre enseignement ?</h2>
+<p class="text-on-surface-variant text-lg">Accédez à votre espace personnel pour suivre vos cours, vos évaluations et vos certifications.</p>
+</div>
+<button class="bg-primary-container text-white px-10 py-5 rounded-2xl font-black text-xl flex items-center gap-4 shadow-2xl shadow-primary/30 hover:scale-105 transition-transform">
+<span>Accéder au LMS</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-8 py-12">
+<div class="space-y-4">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-50">ABTE</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Agence Béninoise de Télé-Enseignement. L'innovation au service de l'éducation nationale.</p>
+</div>
+<div class="space-y-4">
+<h6 class="font-headline font-bold text-blue-900 dark:text-blue-100 uppercase text-xs tracking-widest">Navigation</h6>
+<div class="flex flex-col gap-3">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 hover:underline transition-all text-sm" href="actualit_s_abte.html">Actualités</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 hover:underline transition-all text-sm" href="#">Formations</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 hover:underline transition-all text-sm" href="#">Espace Professeurs</a>
+</div>
+</div>
+<div class="space-y-4">
+<h6 class="font-headline font-bold text-blue-900 dark:text-blue-100 uppercase text-xs tracking-widest">Informations</h6>
+<div class="flex flex-col gap-3">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 hover:underline transition-all text-sm" href="accueil_abte.html">Mentions Légales</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 hover:underline transition-all text-sm" href="#">Politique de Confidentialité</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 hover:underline transition-all text-sm" href="contact_abte.html">Contact</a>
+</div>
+</div>
+<div class="space-y-4">
+<h6 class="font-headline font-bold text-blue-900 dark:text-blue-100 uppercase text-xs tracking-widest">Contact</h6>
+<div class="flex flex-col gap-3">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Cotonou, Bénin</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">contact@abte.bj</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200/50">
+<p class="text-xs opacity-70 text-center md:text-left text-slate-500">© 2024 Agence Béninoise de Télé-Enseignement (ABTE). Tous droits réservés.</p>
+</div>
+</footer>
+</body></html>

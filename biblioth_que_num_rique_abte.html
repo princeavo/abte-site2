@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#00174b",
+              "surface-container-low": "#f2f3ff",
+              "on-primary-fixed-variant": "#1c4197",
+              "on-primary-fixed": "#00174b",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#005321",
+              "on-tertiary-container": "#37b75d",
+              "on-secondary-container": "#00516e",
+              "secondary-fixed-dim": "#78d1ff",
+              "surface-variant": "#dbe1ff",
+              "on-tertiary-fixed": "#002109",
+              "tertiary-container": "#004118",
+              "secondary-fixed": "#c3e8ff",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#63df7f",
+              "surface-dim": "#cfd9ff",
+              "outline-variant": "#c4c6d4",
+              "inverse-primary": "#b4c5ff",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#80fc98",
+              "surface-tint": "#3959b0",
+              "primary-fixed-dim": "#b4c5ff",
+              "inverse-on-surface": "#eef0ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#faf8ff",
+              "on-secondary-fixed-variant": "#004c68",
+              "on-secondary-fixed": "#001e2c",
+              "error": "#ba1a1a",
+              "secondary": "#006689",
+              "on-primary-container": "#7f9df8",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "on-surface": "#00174b",
+              "primary-container": "#003087",
+              "background": "#faf8ff",
+              "secondary-container": "#4ec7ff",
+              "surface-container-high": "#e3e7ff",
+              "surface": "#faf8ff",
+              "primary": "#001d59",
+              "inverse-surface": "#002a78",
+              "surface-container": "#ebedff",
+              "on-surface-variant": "#444652",
+              "primary-fixed": "#dbe1ff",
+              "outline": "#747683"
+            },
+            fontFamily: {
+              "headline": ["Montserrat", "Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #001d59 0%, #003087 100%);
+      }
+      .text-balance {
+        text-wrap: balance;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-xl shadow-blue-900/5">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-black text-blue-900 tracking-tighter font-headline">ABTE</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 hover:text-blue-800 transition-colors text-sm font-semibold tracking-wide" href="actualit_s_abte.html">Actualités</a>
+<a class="text-blue-700 border-b-2 border-blue-700 pb-1 text-sm font-semibold tracking-wide" href="biblioth_que_num_rique_abte.html">Bibliothèque</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors text-sm font-semibold tracking-wide" href="#">Formations</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors text-sm font-semibold tracking-wide" href="faq_support_abte.html">Support</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="p-2 hover:bg-slate-50/50 rounded-lg transition-all">
+<span class="material-symbols-outlined text-blue-900" data-icon="search">search</span>
+</button>
+<button class="p-2 hover:bg-slate-50/50 rounded-lg transition-all relative">
+<span class="material-symbols-outlined text-blue-900" data-icon="notifications">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span>
+</button>
+<button class="bg-primary hover:bg-primary-container text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-all active:scale-95 duration-200">
+                    Mon Espace
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 px-8 relative overflow-hidden bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<h1 class="text-5xl md:text-6xl font-black font-headline text-primary mb-6 leading-tight tracking-tight">
+                    Le Savoir National, <br/><span class="text-secondary">Accessible Partout.</span>
+</h1>
+<p class="text-lg text-on-surface-variant mb-10 max-w-lg leading-relaxed">
+                    Explorez des milliers de ressources pédagogiques certifiées, des manuels scolaires aux cours interactifs de haute qualité.
+                </p>
+<!-- Search Bar -->
+<div class="relative max-w-xl group">
+<div class="absolute inset-y-0 left-5 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 group-focus-within:text-secondary transition-colors" data-icon="search">search</span>
+</div>
+<input class="w-full pl-14 pr-6 py-5 bg-surface-container-lowest border-none rounded-2xl shadow-xl shadow-primary/5 focus:ring-2 focus:ring-secondary transition-all text-on-surface placeholder:text-slate-400" placeholder="Rechercher une ressource, un livre ou un cours" type="text"/>
+<button class="absolute right-3 top-3 bottom-3 bg-secondary text-white px-6 rounded-xl font-bold hover:bg-on-secondary-fixed-variant transition-colors">
+                        Chercher
+                    </button>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed-dim/30 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-tertiary-fixed/20 rounded-full blur-2xl"></div>
+<div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl shadow-blue-900/10 transform hover:scale-[1.02] transition-transform duration-500">
+<img alt="Digital Library" class="w-full h-[500px] object-cover" data-alt="Modern library interior with sunlight streaming through large windows and a person holding a tablet showing educational diagrams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrMOwomerwGB7vGQUepBC_OMawudE0ZmfboPIA_PoisLUQJaFJS_-cOt3heLEMskZY4kMg9Rt5-JTOpdFQ8S_10Mczb3VnD7AVCv9VrmFPvRgqNbf2PoAvjjLBcqIM-qTYUBw4ipWB4o8RpNegkWO5vTkYhy22lWMmNrcSjc8nezurrtf-9_51jHJvHKFhjuByJ9lkvdgaB65uuCOi9THY9Lu1T4J2KkefysKUB1Ke33FnplxQvfvrv7jN-fcWITyXdPM-s4ZPcJuw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Filters Section -->
+<section class="py-12 px-8 sticky top-20 bg-white/80 backdrop-blur-md z-40 border-b border-surface-container">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-center space-x-2">
+<span class="text-sm font-bold text-primary-container uppercase tracking-widest mr-4">Cycles</span>
+<div class="flex space-x-2">
+<button class="px-5 py-2 rounded-full bg-primary text-white text-sm font-semibold shadow-md">Tous</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors text-sm font-semibold">Primaire</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors text-sm font-semibold">Secondaire</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors text-sm font-semibold">Supérieur</button>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<select class="bg-surface-container-lowest border-none rounded-xl text-sm font-medium py-2.5 pl-4 pr-10 focus:ring-2 focus:ring-secondary/30 shadow-sm">
+<option>Toutes les Disciplines</option>
+<option>Mathématiques</option>
+<option>Physique-Chimie</option>
+<option>SVT</option>
+<option>Français</option>
+<option>Histoire-Géo</option>
+</select>
+<button class="flex items-center space-x-2 text-primary font-semibold text-sm hover:underline">
+<span class="material-symbols-outlined text-[20px]" data-icon="filter_list">filter_list</span>
+<span>Filtres Avancés</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Resources Grid -->
+<main class="max-w-7xl mx-auto px-8 py-20">
+<!-- Nouveautés -->
+<div class="mb-20">
+<div class="flex justify-between items-end mb-10">
+<div>
+<h2 class="text-3xl font-black font-headline text-primary">Nouveautés</h2>
+<p class="text-on-surface-variant">Les dernières ressources ajoutées au catalogue national.</p>
+</div>
+<a class="text-secondary font-bold hover:underline flex items-center space-x-1" href="#">
+<span>Voir tout</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest p-5 rounded-2xl transition-all hover:shadow-2xl hover:shadow-blue-900/10 outline-variant/15 border border-transparent hover:border-outline-variant/20">
+<div class="relative aspect-[4/3] mb-5 rounded-xl overflow-hidden bg-surface-container">
+<img alt="Physics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Abstract 3D scientific visualization of atoms and energy waves in deep blue and neon green tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIfPDDf_0hjaf6hkW2ohPaYiFaIlE-mJxGfXyzW8WX7uuc3zs68S0Gd3lpndErxGhlw2c647fdWummhg0WHKJTzqswcl0aTJ4YnwShnsPdFBCxGENv6eK1oX7NBGbWl5hl0vn2HibZKMvzr1VgG2ysyKIEczkoAouBn1UzJW5rtDBTHs0yvvpqRwDNkKTE8IQtemCIFm4Kpn-yaDCfJ5CG9wcN56QSBCSIhkwlUEXnW9tg6YbpxTJ5Slh96oaMTigv5uil00l8615K"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter text-tertiary-container shadow-sm">Nouveau</div>
+<div class="absolute bottom-3 left-3 flex space-x-1">
+<div class="bg-primary/90 text-white p-1.5 rounded-lg backdrop-blur">
+<span class="material-symbols-outlined text-[16px]" data-icon="picture_as_pdf">picture_as_pdf</span>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest mb-2 block">Physique-Chimie • Terminale</span>
+<h3 class="font-bold text-primary mb-2 line-clamp-2 leading-tight">Mécanique de Newton : Principes et Applications</h3>
+<div class="flex items-center justify-between mt-4 pt-4 border-t border-surface-container-low">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-[14px] text-slate-400" data-icon="visibility">visibility</span>
+<span class="text-xs font-medium text-slate-500">1.2k vues</span>
+</div>
+<span class="text-xs font-bold text-primary-container">Gratuit</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest p-5 rounded-2xl transition-all hover:shadow-2xl hover:shadow-blue-900/10 outline-variant/15 border border-transparent hover:border-outline-variant/20">
+<div class="relative aspect-[4/3] mb-5 rounded-xl overflow-hidden bg-surface-container">
+<img alt="Math" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close up of a calculator and math notebook on a workspace with soft desk lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ_D3F4qOhOiQeRWWs3M7cZQOyrUbyGwe2duxtuaQQtkpv7mTOTFuMuFzHje_WQA7XJ_aavRp6kGWLvF6CRuw8uvKZwKkZ7N43WJvSFnNznqaQOUFX-UkdhdDT9ed9AyNvyr0RC87BpKWnW8IegV0oln7PqsRoJSd7EtdUJ41y2E0aSMFUcGxVog_E6NflOCAkvXOXzSf2_BtvI5GM17uznIiNGZ0U6ZWGXgHjLNpQfYDP4JzRSEwvUCJrzQdLLEkR_xRt-OmLIwjK"/>
+<div class="absolute bottom-3 left-3 flex space-x-1">
+<div class="bg-error/90 text-white p-1.5 rounded-lg backdrop-blur">
+<span class="material-symbols-outlined text-[16px]" data-icon="play_circle">play_circle</span>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest mb-2 block">Mathématiques • 3ème</span>
+<h3 class="font-bold text-primary mb-2 line-clamp-2 leading-tight">Géométrie dans l'espace : Visualisation 3D</h3>
+<div class="flex items-center justify-between mt-4 pt-4 border-t border-surface-container-low">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-[14px] text-slate-400" data-icon="schedule">schedule</span>
+<span class="text-xs font-medium text-slate-500">45 min</span>
+</div>
+<span class="text-xs font-bold text-primary-container">Certifié</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest p-5 rounded-2xl transition-all hover:shadow-2xl hover:shadow-blue-900/10 outline-variant/15 border border-transparent hover:border-outline-variant/20">
+<div class="relative aspect-[4/3] mb-5 rounded-xl overflow-hidden bg-surface-container">
+<img alt="Literature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A collection of classic leather bound books on a wooden shelf with warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwwbK3WvPoUBRgzryiZ_0klmvTj24K5mzKeRaaxjXknSI9ZVX9XI-uhvpc4y7aPMQMN783JYGPFJj9DJyD5HsBBlkIRWf69b8c5JdU_wt9Q-5NsmW2mndoyC-D3ndMX3qdNsbUFdIRPAk_sk4M0m_BqL41xz32k-F3c6nBQPwctfSyG-71b5xYp9hbdAQ42dVtA5GVHCxtYZ89tMACAlqfdHvL1Rh0BiHuVJLhfmub3LmHZgkWQs0Ieel6GDMDtGEfDRN5Q_Zz784s"/>
+<div class="absolute bottom-3 left-3 flex space-x-1">
+<div class="bg-secondary/90 text-white p-1.5 rounded-lg backdrop-blur">
+<span class="material-symbols-outlined text-[16px]" data-icon="interactive_space">interactive_space</span>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest mb-2 block">Français • Lycée</span>
+<h3 class="font-bold text-primary mb-2 line-clamp-2 leading-tight">Analyse de texte interactive : Molière - Le Tartuffe</h3>
+<div class="flex items-center justify-between mt-4 pt-4 border-t border-surface-container-low">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-[14px] text-slate-400" data-icon="star">star</span>
+<span class="text-xs font-medium text-slate-500">4.9/5</span>
+</div>
+<span class="text-xs font-bold text-tertiary-container">Interactif</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest p-5 rounded-2xl transition-all hover:shadow-2xl hover:shadow-blue-900/10 outline-variant/15 border border-transparent hover:border-outline-variant/20">
+<div class="relative aspect-[4/3] mb-5 rounded-xl overflow-hidden bg-surface-container">
+<img alt="Tech" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Conceptual image of data flowing through digital circuits with blue and violet glows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2katCO4Y_epos3xR_KTaln_1F_5BGqF8jOmsjsRv27zV9zhn1c_I5lvYdCNYM6pS1BvCMlESMXXUOCirGCRFZSxQK_TVt6oBxi4Hk-gWbxvJumaRb4MhlB8UL_EFJB0PysDRfKoGFKoj3gV5336xtlmB94xYw5fLBi1XAoIeVNAuCvZ_VTHseZ7CBHAspBuCapvg1FCTROFSGI8r2bJQ6rmjoWPNTEV4HeMRJqrzV-u4GT8xC2bVtv43G3k_-RcuJwdgitdpc3qPN"/>
+<div class="absolute bottom-3 left-3 flex space-x-1">
+<div class="bg-primary/90 text-white p-1.5 rounded-lg backdrop-blur">
+<span class="material-symbols-outlined text-[16px]" data-icon="menu_book">menu_book</span>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-bold text-secondary uppercase tracking-widest mb-2 block">Informatique • Supérieur</span>
+<h3 class="font-bold text-primary mb-2 line-clamp-2 leading-tight">Introduction à l'Algorithmique et Programmation</h3>
+<div class="flex items-center justify-between mt-4 pt-4 border-t border-surface-container-low">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-[14px] text-slate-400" data-icon="layers">layers</span>
+<span class="text-xs font-medium text-slate-500">Module 1/5</span>
+</div>
+<span class="text-xs font-bold text-primary-container">Cours Complet</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Les plus consultées (Bento Layout) -->
+<section>
+<div class="mb-10">
+<h2 class="text-3xl font-black font-headline text-primary">Ressources les plus consultées</h2>
+<p class="text-on-surface-variant">Les favoris de la communauté éducative.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+<!-- Bento Item Large -->
+<div class="md:col-span-2 md:row-span-2 group relative rounded-3xl overflow-hidden bg-primary shadow-xl">
+<img alt="Preparation Exam" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="Student hands writing diligently on an exam paper in a quiet, sunlit classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbQ_7Qok5Vsg2M7Y3KOjd8hgc5XPE4X7Hz03dn1GsHCLO8N6-t5YoFlbrbWLjc0XpQTQQjzMreTlpZvnGXaJRICmAJf-rsqw30sz_uTrNlaT27sqtFzJNOYO3D0sdglm-Tbq06hjhN4ibpzmAx3pieetj89wLcEl6ZjatX1stQQQXKmYcNHri_rHjKaDImORjFieBMNIpZS6JmX5Qqg4UoiuseMfmWtJg89HdXJknKCbLrRjeIowW0ZiBV8qWWDa5oePgNbULwD1oK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<div class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-lg text-[10px] font-black tracking-widest uppercase mb-4">Pack Succès</div>
+<h3 class="text-3xl font-black font-headline text-white mb-4 text-balance">Objectif Baccalauréat : Toutes les annales corrigées 2018-2023</h3>
+<p class="text-blue-100 mb-6 max-w-md">Préparez sereinement vos examens avec notre collection complète de sujets officiels et corrigés types.</p>
+<button class="bg-white text-primary px-6 py-3 rounded-xl font-bold hover:bg-secondary-fixed transition-colors flex items-center space-x-2">
+<span>Consulter maintenant</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="open_in_new">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Bento Item Small 1 -->
+<div class="group relative rounded-3xl overflow-hidden bg-secondary shadow-lg">
+<div class="p-8 h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary-fixed mb-4" data-icon="language">language</span>
+<h3 class="text-xl font-bold text-white leading-tight">Anglais pour tous : Niveau Collège</h3>
+</div>
+<div class="flex items-center justify-between text-secondary-fixed">
+<span class="text-sm">24 Modules</span>
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Bento Item Small 2 -->
+<div class="group relative rounded-3xl overflow-hidden bg-surface-container shadow-lg border border-outline-variant/20">
+<div class="p-8 h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="biotech">biotech</span>
+<h3 class="text-xl font-bold text-primary leading-tight">Laboratoire Virtuel de Chimie</h3>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-sm">Simulation Pro</span>
+<span class="material-symbols-outlined" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-8 py-12">
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-blue-900 mb-6 font-headline">ABTE</div>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">L'excellence de l'enseignement à distance pour bâtir l'avenir du Bénin par le numérique.</p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6 font-headline">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Catalogue</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Espace Enseignant</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Aide &amp; Support</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="actualit_s_abte.html">Actualités</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6 font-headline">Ressources</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Manuels Numériques</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Vidéothèque</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Annales Examens</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Outils Interactifs</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6 font-headline">Légal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="accueil_abte.html">Mentions Légales</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Politique de Confidentialité</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="contact_abte.html">Contact</a></li>
+<li><a class="text-slate-500 hover:text-blue-700 transition-all text-sm" href="#">Plan du Site</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200">
+<p class="text-xs opacity-70 text-slate-500 font-body">© 2024 Agence Béninoise de Télé-Enseignement (ABTE). Tous droits réservés.</p>
+</div>
+</footer>
+</body></html>

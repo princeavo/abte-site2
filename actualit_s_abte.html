@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Actualités | ABTE - Agence Béninoise de Télé-Enseignement</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#00174b",
+              "surface-container-low": "#f2f3ff",
+              "on-primary-fixed-variant": "#1c4197",
+              "on-primary-fixed": "#00174b",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#005321",
+              "on-tertiary-container": "#37b75d",
+              "on-secondary-container": "#00516e",
+              "secondary-fixed-dim": "#78d1ff",
+              "surface-variant": "#dbe1ff",
+              "on-tertiary-fixed": "#002109",
+              "tertiary-container": "#004118",
+              "surface-container-highest": "#dbe1ff",
+              "tertiary": "#00290d",
+              "secondary-fixed": "#c3e8ff",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#63df7f",
+              "surface-dim": "#cfd9ff",
+              "outline-variant": "#c4c6d4",
+              "inverse-primary": "#b4c5ff",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#80fc98",
+              "surface-tint": "#3959b0",
+              "primary-fixed-dim": "#b4c5ff",
+              "inverse-on-surface": "#eef0ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#faf8ff",
+              "on-secondary-fixed-variant": "#004c68",
+              "on-secondary-fixed": "#001e2c",
+              "error": "#ba1a1a",
+              "secondary": "#006689",
+              "on-primary-container": "#7f9df8",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "on-surface": "#00174b",
+              "primary-container": "#003087",
+              "background": "#faf8ff",
+              "secondary-container": "#4ec7ff",
+              "surface-container-high": "#e3e7ff",
+              "surface": "#faf8ff",
+              "primary": "#001d59",
+              "inverse-surface": "#002a78",
+              "surface-container": "#ebedff",
+              "on-surface-variant": "#444652",
+              "primary-fixed": "#dbe1ff",
+              "outline": "#747683"
+            },
+            fontFamily: {
+              "headline": ["Montserrat", "Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 50px rgba(0, 23, 75, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-xl shadow-blue-900/5">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-black text-blue-900 dark:text-blue-50 tracking-tighter font-headline">ABTE</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold tracking-wide text-blue-700 dark:text-blue-300 border-b-2 border-blue-700 dark:border-blue-300 pb-1" href="actualit_s_abte.html">Actualités</a>
+<a class="text-sm font-semibold tracking-wide text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="biblioth_que_num_rique_abte.html">Bibliothèque</a>
+<a class="text-sm font-semibold tracking-wide text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Formations</a>
+<a class="text-sm font-semibold tracking-wide text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="faq_support_abte.html">Support</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 rounded-lg transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+<button class="p-2 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 rounded-lg transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+</button>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm shadow-lg shadow-primary/20 active:scale-95 duration-200">
+                    Mon Espace
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero: Featured Article -->
+<section class="max-w-7xl mx-auto px-8 mb-20">
+<div class="relative overflow-hidden rounded-full group cursor-pointer h-[600px] flex items-end">
+<img alt="Étudiants béninois connectés" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Young Beninese university students in a modern bright classroom collaborating around laptops with focused expressions and warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO6nrxvvO0fibEUj0735OujYLMNR4iykeZzGGLErmmYiXQGcU79GlyGX8uGZ1_fwASpG9fmEi8NxVcVST5dLNFnvgQttP28qUFInTysrwT_43ETbeBCpd6xT0aMUh7XZawuzQdnu1lSOQy8-N3d2aKKpzMwhMYin78zQJcVWdWf8l0l8jdcc5cbFYlDfHiRSOzBWub9TPPKlJVsx46bjphZnYvHiTtcEVVlpmy8oCNvv5X8Y8qdkilgNTVEO8pKbbuk7kmNgbut73_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+<div class="relative p-12 lg:p-16 max-w-4xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">A la une</span>
+<span class="text-surface-variant/80 text-sm">12 Mai 2024</span>
+</div>
+<h1 class="text-white font-headline text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
+                        Lancement de la plateforme nationale de télé-enseignement : Une nouvelle ère pour l'éducation au Bénin.
+                    </h1>
+<p class="text-surface-variant text-lg md:text-xl max-w-2xl mb-8 leading-relaxed opacity-90">
+                        L'ABTE déploie sa nouvelle infrastructure numérique permettant à plus de 100 000 étudiants d'accéder à des ressources pédagogiques de classe mondiale depuis n'importe quel point du territoire.
+                    </p>
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 group/btn transition-all hover:pr-10 active:scale-95">
+                        Lire l'article complet
+                        <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filters & Search -->
+<section class="max-w-7xl mx-auto px-8 mb-12">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 bg-surface-container-low p-4 rounded-full">
+<div class="flex flex-wrap gap-2">
+<button class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-semibold text-sm shadow-md">Tout voir</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high font-semibold text-sm transition-colors">Communiqués</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high font-semibold text-sm transition-colors">Événements</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high font-semibold text-sm transition-colors">Rapports</button>
+</div>
+<div class="relative min-w-[300px]">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/50">search</span>
+<input class="w-full pl-12 pr-4 py-2.5 bg-surface-container-lowest border-none rounded-full focus:ring-2 focus:ring-secondary/20 placeholder:text-on-surface-variant/40 text-sm" placeholder="Rechercher une actualité..." type="text"/>
+</div>
+</div>
+</section>
+<!-- News Grid -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Card 1 -->
+<div class="group">
+<div class="relative h-64 overflow-hidden rounded-full mb-6 editorial-shadow">
+<img alt="Rapport annuel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of a professional educational report document on a wooden desk with a pair of glasses and a digital tablet in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChG6O9e2q4IVgmeak-Xruw2vUQod8b88VmcmywuLNgMRCuj2EpaRqg0RBcfAdkv8CuU24l_6D9oLoTkxGwmrAckjgzUdUMk6w260NSQ161PbVmzBLvx_hkxrGve5yccWtS4kuG-b-qL3__fO1MrTFHjRtOdbzDOn-4pasXq5alPQU0XNmBPu8xRlr-_v-LlDMiETVonXXAvDsH-vrkP15Ht8O5vdBwTLrUNYckxjMedY4vhEPdm5T0AY9NKo8sIEYGNhH_5FoalbTV"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-lg text-[10px] font-bold text-primary uppercase tracking-widest">Rapport</div>
+</div>
+<span class="text-secondary text-sm font-semibold mb-2 block">Institutionnel</span>
+<h3 class="font-headline text-xl font-bold text-on-surface leading-snug mb-3 group-hover:text-secondary transition-colors">Publication du rapport de performance numérique 2023.</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4 line-clamp-2">L'agence présente les résultats encourageants de l'adoption du numérique dans les zones rurales du sud-Bénin.</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/15">
+<span class="text-xs text-on-surface-variant/60">5 min de lecture</span>
+<a class="text-primary font-bold text-sm flex items-center gap-1" href="#">Découvrir <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group">
+<div class="relative h-64 overflow-hidden rounded-full mb-6 editorial-shadow">
+<img alt="Atelier de formation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Group of educators in a semi-circle discussing strategy in a bright airy office with glass walls and professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8_6ymVYiB18kjPf_GOo703G_kZ7GiuTHiqpoC_SvhzXAHVLG5JXni92LOCaLLTc_kVI5_67GPJ1jw-Du3UT-t485VIqkzS9JRNOcp313E7JKELgX5dDHb1W863cNrmsm-SbBLNJxu2mTUojixK-0igemhmg3ctKBWpn1HWTVnkcX1Dt15OvMCW-VvtFF5z-1HEwKkPk-rbDZbzrUWUjks3aK8dz6RVgY1zVbGzrgQyTx7XZFnj3-cVS-YbmMGc9TOaPgiRxBe5BXX"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-lg text-[10px] font-bold text-primary uppercase tracking-widest">Événement</div>
+</div>
+<span class="text-secondary text-sm font-semibold mb-2 block">Pédagogie</span>
+<h3 class="font-headline text-xl font-bold text-on-surface leading-snug mb-3 group-hover:text-secondary transition-colors">Atelier régional sur la digitalisation des curricula.</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4 line-clamp-2">Rencontre des experts à Cotonou pour harmoniser les contenus éducatifs numériques du secondaire.</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/15">
+<span class="text-xs text-on-surface-variant/60">Hier</span>
+<a class="text-primary font-bold text-sm flex items-center gap-1" href="#">Découvrir <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group">
+<div class="relative h-64 overflow-hidden rounded-full mb-6 editorial-shadow">
+<img alt="Partenariat technologique" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of two people shaking hands in a professional setting with blurred technological screens in the background showing data charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLdwnQNRWfeznbhd58lO-pLrpziBSZPk07uPww_Y0s3VtFmB8QHG2sF15JD7u8x9_-n2_b4DwHKXYLYZ7gFlhLyPaRPysbEGT-yhexChJhhbGM9I7qVbVgAjSEqzFgdNk6Ue2_OOCHAZbyVgJ0A7AmYBok5sF4gbcdOoeSPTpjMQmTNUbvR-0CLSxnoOiPjuz19HqB9Zy94la-s-BbrL1IKo7kwp5olDRLRTpTpT7O0WTe4KwMa1fBA2n_PBwwwQ9p11kOYI4yUI7q"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-lg text-[10px] font-bold text-primary uppercase tracking-widest">Communiqué</div>
+</div>
+<span class="text-secondary text-sm font-semibold mb-2 block">Innovation</span>
+<h3 class="font-headline text-xl font-bold text-on-surface leading-snug mb-3 group-hover:text-secondary transition-colors">Partenariat stratégique avec les opérateurs mobiles.</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4 line-clamp-2">Nouveaux forfaits data "Éducation" gratuits pour l'accès exclusif aux plateformes de l'ABTE.</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/15">
+<span class="text-xs text-on-surface-variant/60">08 Mai 2024</span>
+<a class="text-primary font-bold text-sm flex items-center gap-1" href="#">Découvrir <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="max-w-7xl mx-auto px-8 mt-32">
+<div class="relative bg-primary-container rounded-full overflow-hidden p-12 md:p-20 flex flex-col md:flex-row items-center gap-12">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0 100 C 20 0 50 0 100 100" fill="transparent" stroke="white" stroke-width="0.5"></path>
+<path d="M0 80 C 30 20 60 20 100 80" fill="transparent" stroke="white" stroke-width="0.5"></path>
+</svg>
+</div>
+<div class="relative z-10 flex-1">
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">Le Courrier de l'ABTE</h2>
+<p class="text-on-primary-container text-lg max-w-md">Recevez mensuellement les dernières avancées du numérique éducatif au Bénin directement dans votre boîte mail.</p>
+</div>
+<div class="relative z-10 flex-1 w-full max-w-lg">
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 px-6 py-4 rounded-xl bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:ring-secondary focus:bg-white/20 transition-all border-none outline-none" placeholder="Votre adresse email" type="email"/>
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold shadow-xl active:scale-95 transition-transform">S'abonner</button>
+</form>
+<p class="text-[10px] text-white/40 mt-4 uppercase tracking-widest font-semibold">Zéro spam. Désinscription possible à tout moment.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-8 py-12">
+<div class="col-span-1 md:col-span-2">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-50 mb-4 font-headline uppercase tracking-tighter">ABTE</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm max-w-sm leading-relaxed">
+                    L'Agence Béninoise de Télé-Enseignement est l'institution de référence pour la transformation numérique du système éducatif national.
+                </p>
+</div>
+<div>
+<h4 class="font-headline text-sm font-bold text-blue-900 dark:text-blue-50 mb-6 uppercase tracking-widest">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-all hover:underline" href="actualit_s_abte.html">Actualités</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-all hover:underline" href="#">Formations</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-all hover:underline" href="biblioth_que_num_rique_abte.html">Bibliothèque</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-all hover:underline" href="#">Support technique</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-sm font-bold text-blue-900 dark:text-blue-50 mb-6 uppercase tracking-widest">Ressources</h4>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-all hover:underline" href="accueil_abte.html">Mentions Légales</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-all hover:underline" href="#">Politique de Confidentialité</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-all hover:underline" href="contact_abte.html">Contact</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-all hover:underline" href="#">Plan du Site</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200 dark:border-slate-800">
+<p class="text-xs opacity-70 text-blue-900 dark:text-blue-100">
+                © 2024 Agence Béninoise de Télé-Enseignement (ABTE). Tous droits réservés.
+            </p>
+</div>
+</footer>
+</body></html>

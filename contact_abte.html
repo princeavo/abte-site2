@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | ABTE - Agence Béninoise de Télé-Enseignement</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=Montserrat:wght@700;800;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#002109",
+              "tertiary-container": "#004118",
+              "tertiary-fixed-dim": "#63df7f",
+              "surface-dim": "#cfd9ff",
+              "on-tertiary": "#ffffff",
+              "surface-container": "#ebedff",
+              "tertiary": "#00290d",
+              "primary-fixed-dim": "#b4c5ff",
+              "secondary-fixed-dim": "#78d1ff",
+              "primary": "#001d59",
+              "background": "#faf8ff",
+              "inverse-surface": "#002a78",
+              "on-primary-container": "#7f9df8",
+              "surface-variant": "#dbe1ff",
+              "inverse-on-surface": "#eef0ff",
+              "surface": "#faf8ff",
+              "outline": "#747683",
+              "secondary": "#006689",
+              "surface-bright": "#faf8ff",
+              "error-container": "#ffdad6",
+              "secondary-container": "#4ec7ff",
+              "on-surface": "#00174b",
+              "on-secondary-container": "#00516e",
+              "primary-container": "#003087",
+              "primary-fixed": "#dbe1ff",
+              "on-tertiary-container": "#37b75d",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#001e2c",
+              "on-secondary-fixed-variant": "#004c68",
+              "surface-container-highest": "#dbe1ff",
+              "secondary-fixed": "#c3e8ff",
+              "inverse-primary": "#b4c5ff",
+              "on-primary-fixed-variant": "#1c4197",
+              "error": "#ba1a1a",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f2f3ff",
+              "on-surface-variant": "#444652",
+              "surface-container-high": "#e3e7ff",
+              "tertiary-fixed": "#80fc98",
+              "on-tertiary-fixed-variant": "#005321",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c4c6d4",
+              "on-background": "#00174b",
+              "on-primary-fixed": "#00174b",
+              "surface-tint": "#3959b0",
+              "on-error-container": "#93000a"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"],
+              "montserrat": ["Montserrat", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #001d59 0%, #003087 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black text-blue-900 dark:text-white tracking-tighter">ABTE</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-montserrat font-bold tracking-tight" href="accueil_abte.html">Accueil</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-montserrat font-bold tracking-tight" href="propos_abte.html">À propos</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-montserrat font-bold tracking-tight" href="strat_gie_2026_2028_abte.html">Stratégie</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-montserrat font-bold tracking-tight" href="projets_abte.html">Projets</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-montserrat font-bold tracking-tight" href="exp_riences_enseignements_abte.html">Expériences</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-montserrat font-bold tracking-tight" href="gouvernance_abte.html">Gouvernance</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-slate-100/50 dark:hover:bg-slate-800/50 p-2 rounded-lg transition-all" data-icon="dark_mode">dark_mode</button>
+<button class="primary-gradient text-on-primary px-6 py-2.5 rounded-xl font-bold transition-all duration-300 ease-in-out hover:scale-[1.02] text-sm">Accéder à la plateforme</button>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="px-8 md:px-20 mb-20">
+<div class="max-w-4xl">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary mb-6 tracking-tight leading-tight">
+                    Construisons ensemble l'éducation de <span class="text-secondary">demain</span>.
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    Vous avez une question sur nos programmes de télé-enseignement ou souhaitez collaborer avec l'ABTE ? Notre équipe est à votre écoute pour vous accompagner.
+                </p>
+</div>
+</section>
+<!-- Main Content: Asymmetric Layout -->
+<section class="px-8 md:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Contact Form Area -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] shadow-[0_20px_50px_rgba(0,23,75,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/10 rounded-full -mr-16 -mt-16"></div>
+<h2 class="font-headline text-3xl font-bold text-primary mb-8">Envoyez-nous un message</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Nom Complet</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-4 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant" placeholder="Jean Dupont" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Email professionnel</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-4 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant" placeholder="jean@organisation.bj" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Sujet</label>
+<select class="w-full bg-surface-container-low border-none rounded-xl px-4 py-4 focus:ring-2 focus:ring-secondary/20 transition-all appearance-none">
+<option>Information générale</option>
+<option>Partenariat technique</option>
+<option>Support académique</option>
+<option>Presse et Communication</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Votre message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl px-4 py-4 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant resize-none" placeholder="Comment pouvons-nous vous aider ?" rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto primary-gradient text-on-primary px-10 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform shadow-lg flex items-center justify-center gap-3" type="submit">
+<span>Envoyer le message</span>
+<span class="material-symbols-outlined text-xl" data-icon="send">send</span>
+</button>
+</form>
+</div>
+<!-- Sidebar Information Area -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Contact Cards -->
+<div class="bg-surface-container-low p-8 rounded-[2rem] space-y-8">
+<div class="flex items-start gap-6">
+<div class="bg-primary-container/10 p-4 rounded-2xl text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-primary mb-1">Notre Siège</h3>
+<p class="text-on-surface-variant leading-relaxed">Route de l'Aéroport, Cotonou<br/>République du Bénin</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="bg-secondary-container/10 p-4 rounded-2xl text-secondary">
+<span class="material-symbols-outlined text-3xl" data-icon="call">call</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-primary mb-1">Téléphone</h3>
+<p class="text-on-surface-variant">+229 21 XX XX XX</p>
+<p class="text-on-surface-variant text-sm mt-1">Lun - Ven, 08:00 - 17:30</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="bg-tertiary-fixed-dim/20 p-4 rounded-2xl text-on-tertiary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="mail">mail</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-primary mb-1">Email</h3>
+<p class="text-on-surface-variant">contact@abte.bj</p>
+<p class="text-on-surface-variant">support@abte.bj</p>
+</div>
+</div>
+</div>
+<!-- Social Connect -->
+<div class="bg-primary text-on-primary p-8 rounded-[2rem] overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="font-headline font-bold text-xl mb-6">Suivez notre actualité</h3>
+<div class="flex gap-4">
+<a class="bg-white/10 hover:bg-white/20 p-4 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span>
+</a>
+<a class="bg-white/10 hover:bg-white/20 p-4 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="bg-white/10 hover:bg-white/20 p-4 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</a>
+</div>
+</div>
+<div class="absolute bottom-[-20px] right-[-20px] opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="hub">hub</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="mt-20 px-8 md:px-20">
+<div class="w-full h-[500px] rounded-[3rem] overflow-hidden relative group">
+<div class="absolute inset-0 bg-slate-200" data-location="Cotonou, Benin" style="">
+<img alt="Satellite map view of the central administrative district in Cotonou Benin with modern infrastructure" class="w-full h-full object-cover grayscale brightness-90 transition-transform duration-700 group-hover:scale-105" data-alt="Satellite map view of the central administrative district in Cotonou Benin with modern infrastructure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjxUdfmZo4lURIZPMac-DRPUIPXi3kMZPDHQb82DuI5iXcFy1vbfM1omrW0t_U88JP8evBkncVZAqGAD9EkPoqSNOIj_jM9Ip0Q8OI0ps3yEVc3VL6bqxTmh3-hSi5effUuiX3k26OSznNfqrLDXlE0Hkt34tDp4wozxz6AHW9b9Qqm7oFrUUvYHq4sI7xKUESe3RH6zRgN7IfUfp4iwRL_U8YTjs-KxEDhqqiKWGYTuBPW9dtsnFk7t2WtM130b0ulX29JVxJwOzv"/>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="relative">
+<div class="absolute inset-0 bg-secondary rounded-full animate-ping opacity-25"></div>
+<div class="relative bg-secondary text-white p-4 rounded-full shadow-2xl">
+<span class="material-symbols-outlined text-4xl" data-icon="school" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+</div>
+<div class="mt-4 bg-white/90 backdrop-blur-md px-6 py-3 rounded-full shadow-xl border border-white/50">
+<p class="font-bold text-primary whitespace-nowrap">Siège ABTE - Cotonou</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-blue-950 grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-blue-900 dark:text-white mb-6">ABTE</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm antialiased leading-relaxed">
+                L'Agence Béninoise de Télé-Enseignement œuvre pour la digitalisation et l'excellence académique à travers tout le territoire national.
+            </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-blue-900 dark:text-blue-100 mb-6">Navigation</h4>
+<nav class="flex flex-col space-y-3">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors font-inter text-sm" href="#">Missions</a>
+<a class="font-semibold text-blue-700 dark:text-blue-300 font-inter text-sm" href="contact_abte.html">Contact</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors font-inter text-sm" href="accueil_abte.html">Mentions Légales</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors font-inter text-sm" href="accueil_abte.html">Confidentialité</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-blue-900 dark:text-blue-100 mb-6">Contact direct</h4>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm">Cotonou, Quartier Haie-Vive</p>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm">info@abte.bj</p>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm">+229 00 00 00 00</p>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-blue-900 dark:text-blue-100 mb-6">Newsletter</h4>
+<div class="flex">
+<input class="bg-white dark:bg-slate-900 border-none rounded-l-xl px-4 py-3 w-full text-sm focus:ring-1 focus:ring-blue-500" placeholder="votre@email.com" type="email"/>
+<button class="bg-blue-900 text-white px-4 rounded-r-xl">
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-inter antialiased">
+                © 2024 Agence Béninoise de Télé-Enseignement (ABTE). Tous droits réservés.
+            </p>
+</div>
+</footer>
+</body></html>

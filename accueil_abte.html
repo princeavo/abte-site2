@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ABTE - Agence Béninoise de Télé-Enseignement</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#002109",
+              "tertiary-container": "#004118",
+              "tertiary-fixed-dim": "#63df7f",
+              "surface-dim": "#cfd9ff",
+              "on-tertiary": "#ffffff",
+              "surface-container": "#ebedff",
+              "tertiary": "#00290d",
+              "primary-fixed-dim": "#b4c5ff",
+              "secondary-fixed-dim": "#78d1ff",
+              "primary": "#001d59",
+              "background": "#faf8ff",
+              "inverse-surface": "#002a78",
+              "on-primary-container": "#7f9df8",
+              "surface-variant": "#dbe1ff",
+              "inverse-on-surface": "#eef0ff",
+              "surface": "#faf8ff",
+              "outline": "#747683",
+              "secondary": "#006689",
+              "surface-bright": "#faf8ff",
+              "error-container": "#ffdad6",
+              "secondary-container": "#4ec7ff",
+              "on-surface": "#00174b",
+              "on-secondary-container": "#00516e",
+              "primary-container": "#003087",
+              "primary-fixed": "#dbe1ff",
+              "on-tertiary-container": "#37b75d",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#001e2c",
+              "on-secondary-fixed-variant": "#004c68",
+              "surface-container-highest": "#dbe1ff",
+              "secondary-fixed": "#c3e8ff",
+              "inverse-primary": "#b4c5ff",
+              "on-primary-fixed-variant": "#1c4197",
+              "error": "#ba1a1a",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f2f3ff",
+              "on-surface-variant": "#444652",
+              "surface-container-high": "#e3e7ff",
+              "tertiary-fixed": "#80fc98",
+              "on-tertiary-fixed-variant": "#005321",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c4c6d4",
+              "on-background": "#00174b",
+              "on-primary-fixed": "#00174b",
+              "surface-tint": "#3959b0",
+              "on-error-container": "#93000a"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"],
+              "montserrat": ["Montserrat"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .primary-gradient-btn {
+        background: linear-gradient(135deg, #001d59 0%, #003087 100%);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black text-blue-900 dark:text-white tracking-tighter font-montserrat">ABTE</div>
+<div class="hidden md:flex space-x-8 items-center font-montserrat font-bold tracking-tight">
+<a class="text-blue-800 dark:text-blue-400 border-b-2 border-blue-800 dark:border-blue-400 pb-1" href="accueil_abte.html">Accueil</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="propos_abte.html">À propos</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="strat_gie_2026_2028_abte.html">Stratégie</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="projets_abte.html">Projets</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="exp_riences_enseignements_abte.html">Expériences</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="gouvernance_abte.html">Gouvernance</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="material-symbols-outlined p-2 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 rounded-lg text-on-surface-variant" data-icon="dark_mode">dark_mode</button>
+<button class="primary-gradient-btn text-on-primary px-6 py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02]">
+                    Accéder à la plateforme
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-30 mix-blend-overlay" data-alt="Group of diverse African students collaborating with laptops in a modern bright educational setting with soft focus Benin flag colors in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnZ8Uj1-AG7kaDmyiMRmB5P50lf4Wqzad-ZF_KwDfVr-deVvz7JiL-9j5qu8H1QcH2S0E0675wsysHlp6gkL1sBgtaC3MEYq3dUbSzGDSEGwsVO-7IFuaqUWWId2ocQfp8LdVDktyl7D7YDJwYav2uBhEqSunKmztESV6KbY2wLWaJe15fCpHLYcZQAd8xkPHBTdGVKCyiQOh0MvO_sYnEf7yZ94IxqRl14FcUqVZbkqdrvTuW5Dack6eOkWRL-q-qDeNHzofuNmdy"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 container mx-auto px-8 md:px-12">
+<div class="max-w-4xl space-y-8">
+<div class="inline-block px-4 py-1.5 rounded-full bg-tertiary-container/30 border border-on-tertiary-container/20 backdrop-blur-md">
+<span class="text-on-tertiary-container font-semibold text-sm tracking-wide uppercase">Vision Nationale 2028</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
+                    Faire du Bénin un pays où tout apprenant, où qu’il se trouve, peut accéder à un enseignement de qualité grâce au numérique.
+                </h1>
+<p class="text-primary-fixed-dim text-xl md:text-2xl font-medium max-w-2xl">
+                    Agence Béninoise de Télé-Enseignement (ABTE) – Stratégie 2026-2028
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="primary-gradient-btn text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-[1.03] transition-transform">
+                        Découvrir la stratégie
+                    </button>
+<button class="border border-outline-variant/30 text-white hover:bg-white/10 px-8 py-4 rounded-xl font-bold text-lg backdrop-blur-sm transition-colors">
+                        Accéder à la plateforme
+                    </button>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50">
+<span class="text-xs font-bold uppercase tracking-widest">Découvrir</span>
+<span class="material-symbols-outlined animate-bounce">expand_more</span>
+</div>
+</header>
+<!-- Who We Are Section (Institutional Hub) -->
+<section class="py-28 bg-surface">
+<div class="container mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-6">
+<h2 class="font-headline text-4xl font-bold text-primary">Qui sommes-nous ?</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        L'ABTE s'affirme comme le <span class="text-secondary font-bold">HUB national de ressources pédagogiques</span> numériques au Bénin. Notre mission est d'agir en tant que centre d'excellence en ingénierie de la formation, transformant l'apprentissage par l'innovation technologique.
+                    </p>
+<div class="grid sm:grid-cols-2 gap-4 pt-6">
+<div class="p-6 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-3xl mb-3" data-icon="hub">hub</span>
+<h4 class="font-bold text-primary">Hub Centralisé</h4>
+<p class="text-sm text-on-surface-variant mt-1">Coordination de toutes les ressources éducatives numériques nationales.</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-3xl mb-3" data-icon="architecture">architecture</span>
+<h4 class="font-bold text-primary">Ingénierie</h4>
+<p class="text-sm text-on-surface-variant mt-1">Conception de parcours d'apprentissage modernes et adaptés.</p>
+</div>
+</div>
+</div>
+<div class="relative rounded-3xl overflow-hidden shadow-2xl">
+<img alt="" class="w-full aspect-video object-cover" data-alt="Modern educational technology office with specialists working on digital content creation and high-tech equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp4tF75anTcvGv0mZo8ruH_b5unbuEaC8GDsiV8JUlECrZF_tu6MZzC_zjOoclw8-5bn-nkmHwz29AjfZ29ztzJZjuAqydEYFk-te6XKG2oXex62l1P7lPJIaCiZdqDBXGHqdl2Q9mOH88wMeiEQF6iW3lrAi7ZqBeN1V4Y4QSiZW4mI1ZwaFoOVU4QusooLAxN8SGrIHIw3CQ350-WJpLHqLKsbkdaKLq3LUgN5atD0BFLNxiSvE8ZnRAIF5bU3qZ6k7IkrCLdyTN"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision & Principles -->
+<section class="py-28 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+<h2 class="font-headline text-4xl font-bold text-primary">Notre Vision</h2>
+<p class="text-xl text-secondary font-medium italic">"Démocratiser l'excellence académique à travers chaque écran du Bénin."</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 group-hover:text-white transition-colors" data-icon="verified">verified</span>
+<h3 class="font-headline text-xl font-bold text-primary mb-3 group-hover:text-white">Qualité</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Garantir des standards pédagogiques internationaux pour tous nos contenus.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 group-hover:text-white transition-colors" data-icon="universal_currency_alt">universal_currency_alt</span>
+<h3 class="font-headline text-xl font-bold text-primary mb-3 group-hover:text-white">Accessibilité</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Réduire la fracture numérique pour atteindre les zones les plus reculées.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 group-hover:text-white transition-colors" data-icon="lightbulb">lightbulb</span>
+<h3 class="font-headline text-xl font-bold text-primary mb-3 group-hover:text-white">Innovation</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Intégrer l'IA et les nouvelles technologies au service de l'apprenant.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10 group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 group-hover:text-white transition-colors" data-icon="gavel">gavel</span>
+<h3 class="font-headline text-xl font-bold text-primary mb-3 group-hover:text-white">Éthique</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Respecter l'intégrité académique et la protection des données.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Deployment Timeline -->
+<section class="py-28 bg-surface">
+<div class="container mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-primary text-center mb-20">Déploiement Progressif</h2>
+<div class="relative max-w-4xl mx-auto">
+<!-- Center Line -->
+<div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-primary-container/20 hidden md:block"></div>
+<div class="space-y-16">
+<!-- Phase 1 -->
+<div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-16 text-right order-2 md:order-1">
+<h3 class="text-2xl font-bold text-primary">Phase 1 (2026-2027)</h3>
+<p class="text-on-surface-variant mt-2">Mise en place des infrastructures fondamentales, digitalisation du socle commun et lancement de la plateforme pilote.</p>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-secondary border-4 border-surface-container z-10 hidden md:block"></div>
+<div class="md:w-1/2 md:pl-16 order-3">
+<div class="p-6 bg-secondary-container/10 border border-secondary-container/20 rounded-2xl inline-block">
+<ul class="text-sm space-y-2 font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary" data-icon="check_circle">check_circle</span> Infrastructure Cloud</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary" data-icon="check_circle">check_circle</span> 500 cours digitalisés</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-16 text-right order-3 md:order-1">
+<div class="p-6 bg-tertiary-container/10 border border-tertiary-container/20 rounded-2xl inline-block">
+<ul class="text-sm space-y-2 font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-on-tertiary-container" data-icon="bolt">bolt</span> IA Pédagogique</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-on-tertiary-container" data-icon="bolt">bolt</span> Laboratoire EdTech</li>
+</ul>
+</div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-on-tertiary-container border-4 border-surface-container z-10 hidden md:block"></div>
+<div class="md:w-1/2 md:pl-16 order-2">
+<h3 class="text-2xl font-bold text-primary">Phase 2 (2027-2028)</h3>
+<p class="text-on-surface-variant mt-2">Expansion nationale, déploiement des outils de réalité virtuelle et intégration complète des MOOCs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Numbers -->
+<section class="py-20 bg-primary">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div class="space-y-2">
+<div class="text-5xl font-black text-secondary-fixed">1M+</div>
+<div class="text-primary-fixed-dim text-sm font-bold uppercase tracking-widest">Apprenants Cibles</div>
+</div>
+<div class="space-y-2">
+<div class="text-5xl font-black text-secondary-fixed">5,000</div>
+<div class="text-primary-fixed-dim text-sm font-bold uppercase tracking-widest">Cours Interactifs</div>
+</div>
+<div class="space-y-2">
+<div class="text-5xl font-black text-secondary-fixed">77</div>
+<div class="text-primary-fixed-dim text-sm font-bold uppercase tracking-widest">Communes Couvertes</div>
+</div>
+<div class="space-y-2">
+<div class="text-5xl font-black text-secondary-fixed">24/7</div>
+<div class="text-primary-fixed-dim text-sm font-bold uppercase tracking-widest">Disponibilité</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projets Structurants - Bento Grid -->
+<section class="py-28 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-primary mb-16">Projets Structurants</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[800px]">
+<!-- Project 1: Large -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-lowest p-8 rounded-3xl flex flex-col justify-between group overflow-hidden relative border border-outline-variant/10">
+<div class="z-10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="cloud_done">cloud_done</span>
+<h3 class="text-2xl font-bold text-primary">Plateforme nationale</h3>
+<p class="text-on-surface-variant mt-2 max-w-sm">Le portail centralisé de tous les savoirs, accessible partout sans restriction.</p>
+</div>
+<div class="mt-8 z-10">
+<button class="text-secondary font-bold flex items-center gap-2 hover:gap-4 transition-all">En savoir plus <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+<div class="absolute -right-20 -bottom-20 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl group-hover:scale-110 transition-transform"></div>
+</div>
+<!-- Project 2: Vertical -->
+<div class="md:col-span-1 md:row-span-2 bg-primary p-8 rounded-3xl flex flex-col justify-end relative overflow-hidden text-white">
+<div class="absolute inset-0">
+<img alt="" class="w-full h-full object-cover opacity-20" data-alt="Abstract digital network visualization with flowing lines and particles representing a digital library and cloud storage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh8CBNHOXQbKGNGDH1ZhdiNAVJFlykMzwdmk25DWEM4qHQ58hQlJamoflc0N8fiEEp0O99W2PqPA0KrjzNGDHoy1u3T634FEfOmCsFwBUBOHaGhyefe_Jen5THhI0s0zE62Icr6yj582nT1vWKvbM5XqsCIgbHxmzmuXrVseqUjTNuq09SFayjmlzqnWxaowF3uc7LhLm9cKwP3e6KDmnzdKWFY3vWsEbeXIOP2IKXdDsq-KNdpkgUh5E6cQqQfW97fSXj2RYpWuI9"/>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-secondary-container mb-4" data-icon="auto_stories" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<h3 class="text-2xl font-bold">Bibliothèque numérique</h3>
+<p class="text-primary-fixed-dim mt-2">Accès illimité à des milliers d'ouvrages et ressources académiques.</p>
+</div>
+</div>
+<!-- Project 3: Small -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="edit_note">edit_note</span>
+<h3 class="text-xl font-bold text-primary">Digitalisation des cours</h3>
+<p class="text-sm text-on-surface-variant mt-2">Transformation des curricula en formats interactifs riches.</p>
+</div>
+<!-- Project 4: Long -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-highest p-8 rounded-3xl flex items-center justify-between border border-outline-variant/10">
+<div class="max-w-xs">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="school">school</span>
+<h3 class="text-xl font-bold text-primary">Formation des enseignants</h3>
+<p class="text-sm text-on-surface-variant mt-2">Accompagnement pédagogique aux nouveaux outils du numérique.</p>
+</div>
+<div class="hidden sm:block">
+<div class="w-32 h-32 rounded-full border-4 border-white/50 border-dashed animate-[spin_10s_linear_infinite]"></div>
+</div>
+</div>
+<!-- Project 5: Small -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="devices">devices</span>
+<h3 class="text-xl font-bold text-primary">Application mobile</h3>
+<p class="text-sm text-on-surface-variant mt-2">L'éducation dans la poche, même en mode hors-ligne.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+<div class="bg-tertiary-container/10 p-8 rounded-3xl border border-tertiary-container/20 flex items-center gap-6">
+<div class="p-4 bg-tertiary-container rounded-2xl">
+<span class="material-symbols-outlined text-3xl text-white" data-icon="groups">groups</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary">MOOC Bénin</h3>
+<p class="text-sm text-on-surface-variant">Cours en ligne massifs ouverts pour la formation continue des citoyens.</p>
+</div>
+</div>
+<div class="bg-secondary-container/10 p-8 rounded-3xl border border-secondary-container/20 flex items-center gap-6">
+<div class="p-4 bg-secondary-container rounded-2xl">
+<span class="material-symbols-outlined text-3xl text-on-secondary-container" data-icon="science">science</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary">Laboratoire EdTech</h3>
+<p class="text-sm text-on-surface-variant">Un incubateur d'innovations pour le futur de l'enseignement au Bénin.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-blue-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full font-inter text-sm antialiased">
+<div class="space-y-6">
+<div class="text-xl font-bold text-blue-900 dark:text-white">ABTE</div>
+<p class="text-slate-500 dark:text-slate-400">Agence Béninoise de Télé-Enseignement. Sous tutelle du Ministère de l'Enseignement Supérieur et de la Recherche Scientifique.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-slate-400 hover:text-blue-600 transition-colors cursor-pointer" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-blue-600 transition-colors cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-blue-900 dark:text-blue-100 uppercase tracking-widest text-xs">Missions</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors" href="#">Digitalisation</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors" href="#">Formation continue</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors" href="#">Infrastructures IT</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-blue-900 dark:text-blue-100 uppercase tracking-widest text-xs">Contact</h4>
+<div class="text-slate-500 dark:text-slate-400 space-y-2">
+<p>Cotonou, République du Bénin</p>
+<p>contact@abte.bj</p>
+<p>+229 21 XX XX XX</p>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-blue-900 dark:text-blue-100 uppercase tracking-widest text-xs">Informations</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors" href="accueil_abte.html">Mentions Légales</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-200 transition-colors" href="accueil_abte.html">Confidentialité</a>
+<a class="font-semibold text-blue-700 dark:text-blue-300" href="gouvernance_abte.html">Portail Gouvernemental</a>
+</nav>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-slate-200 dark:border-blue-900/50 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-xs">© 2024 Agence Béninoise de Télé-Enseignement (ABTE). Tous droits réservés.</p>
+<div class="flex items-center gap-4 text-xs font-bold text-blue-900 dark:text-white uppercase tracking-tighter">
+                Gouvernement du Bénin
+            </div>
+</div>
+</footer>
+</body></html>
